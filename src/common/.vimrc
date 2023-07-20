@@ -385,3 +385,5 @@ function! VisualSelection(direction, extra_filter) range
     let @/ = l:pattern
     let @" = l:saved_reg
 endfunction
+
+au BufRead,BufNewFile *.p4  setfiletype p4
