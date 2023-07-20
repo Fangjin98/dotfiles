@@ -17,4 +17,4 @@ Write-Host "Installing GUI apps..."
 scoop install bandizip notion sumatrapdf vlc
 
 Write-Host "Syncing configs..."
-./Install-Dotfiles.ps1
+./Windows-Install-Dotfiles.ps1
