@@ -1,1 +1,0 @@
-/home/joey/dotfiles/src/common/.vim
