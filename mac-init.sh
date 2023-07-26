@@ -50,7 +50,9 @@ brew install --cask skim latest miniconda raycast
 # defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
 echo "Link Configuration Files..."
+mkdir -p $HOME/.config
 ./mac-install-dotfiles.sh
+source $HOME/.zshrc
 
 # Installing Fonts
 # git clone git@github.com:shaunsingh/SFMono-Nerd-Font-Ligaturized.git /tmp/SFMono_Nerd_Font
@@ -59,16 +61,16 @@ echo "Link Configuration Files..."
 
 # curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v1.0.4/sketchybar-app-font.ttf -o $HOME/Library/Fonts/sketchybar-app-font.ttf
 
-# source $HOME/.zshrc
-# cfg config --local status.showUntrackedFiles no
-
 # Start Services
 echo "Starting Services (grant permissions)..."
-# brew services start skhd
-# brew services start yabai
-# brew services start sketchybar
+skhd --start-service
+yabai --start-service
+brew services start sketchybar
 
+# config yabai
+echo "Config yabai"
 csrutil status
 echo "Do not forget to disable SIP"
 echo "Add sudoer manually:\n '$(whoami) ALL = (root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | awk "{print \$1;}") $(which yabai) --load-sa' to '/private/etc/sudoers.d/yabai'"
+
 echo "Installation complete..."

@@ -4,7 +4,9 @@ source $HOME/.config/shell/default
 
 ## Platform Dependencies
 export PATH=/opt/homebrew/bin:$PATH
+
 eval "$(zoxide init zsh --cmd cd)"
+
 [ -f ~/.config/.fzf.zsh ] && source ~/.config/.fzf.zsh
 
 __conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
