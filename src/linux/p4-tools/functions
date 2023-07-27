@@ -1,5 +1,5 @@
 function p4-build() {
-    $SDE/p4_build.sh -p $1;
+    $HOME/p4-tools/p4_build.sh -p $1;
 }
 
 function p4-run-model() {
