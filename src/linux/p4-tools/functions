@@ -1,0 +1,20 @@
+function p4-build() {
+    $HOME/p4-tools/p4_build.sh -p $1;
+}
+
+function p4-run-model() {
+    sudo $HOME/p4-tools/veth_setup.sh
+    $SDE/run_tofino_model.sh -p $1;
+}
+
+function p4-run() {
+    $SDE/run_switchd.sh -p $1;
+}
+
+function p4-test() {
+    $SDE/run_p4_tests.sh -p $1 -t $2;
+}
+
+function p4-down() {
+    sudo $HOME/p4-tools/veth_teardown.sh
+}

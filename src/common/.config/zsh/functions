@@ -1,0 +1,25 @@
+# Proxy
+function proxyon () {
+  export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7891
+  echo "HTTP Proxy on"
+}
+
+function proxyoff () {
+  unset http_proxy
+  unset https_proxy
+  unset all_proxy
+  echo "HTTP Proxy off"
+}
+
+# Git
+function show-stash() {
+    git stash show -p stash@{$1};
+}
+
+function stash-len() {
+    git stash list | wc -l;
+}
+
+function drop-stash() {
+    git stash drop stash@{$1};
+}
