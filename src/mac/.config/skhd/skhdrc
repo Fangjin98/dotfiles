@@ -17,10 +17,10 @@ shift + alt - n  : yabai -m window --display next; yabai -m display --focus next
 shift + alt - 1  : yabai -m window --display 1; yabai -m display --focus 1
 shift + alt - 2  : yabai -m window --display 2; yabai -m display --focus 2
 # make floating window fill screen, left fill, right fill or center
-shift + alt - up   : yabai -m window --grid 1:1:0:0:1:1
-shift + alt - left   : yabai -m window --grid 1:2:0:0:1:1
-shift + alt - right   : yabai -m window --grid 1:2:1:0:1:1
-shift + alt - down : yabai -m window --grid 4:4:1:1:2:2
+# shift + alt - up   : yabai -m window --grid 1:1:0:0:1:1
+# shift + alt - left   : yabai -m window --grid 1:2:0:0:1:1
+# shift + alt - right   : yabai -m window --grid 1:2:1:0:1:1
+# shift + alt - down : yabai -m window --grid 4:4:1:1:2:2
 
 
 ### MODIFY ###
