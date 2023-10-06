@@ -16,7 +16,7 @@ else
 fi
 unset __conda_setup
 
-source $HOME/.config/shell/alias
-source $HOME/.config/shell/functions
-source $HOME/.config/shell/default
-source $HOME/.config/shell/git
+source $HOME/.config/zsh/alias
+source $HOME/.config/zsh/functions
+source $HOME/.config/zsh/default
+# source $HOME/.config/shell/git
