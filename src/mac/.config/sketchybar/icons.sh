@@ -1,9 +1,0 @@
-#!/bin/bash
-
-# General Icons
-LOADING=􀖇
-APPLE=􀣺
-PREFERENCES=􀺽
-ACTIVITY=􀒓
-LOCK=􀒳
-CALENDAR=􀉉
