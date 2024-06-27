@@ -9,8 +9,8 @@ brew analytics off
 brew tap homebrew/cask-fonts
 brew tap FelixKratz/formulae
 
-brew install gh starship zsh-autosuggestions zsh-syntax-highlighting skhd yabai sketchybar bottom
-brew install --cask skim latest miniconda raycast
+brew install gh starship zsh-autosuggestions zsh-syntax-highlighting bottom lsd fzf zoxide
+brew install --cask skim latest miniconda raycast joplin
 
 # macOS Settings
 # echo "Changing macOS defaults..."
@@ -58,19 +58,5 @@ source $HOME/.zshrc
 # git clone git@github.com:shaunsingh/SFMono-Nerd-Font-Ligaturized.git /tmp/SFMono_Nerd_Font
 # mv /tmp/SFMono_Nerd_Font/* $HOME/Library/Fonts
 # rm -rf /tmp/SFMono_Nerd_Font/
-
-# curl -L https://github.com/kvndrsslr/sketchybar-app-font/releases/download/v1.0.4/sketchybar-app-font.ttf -o $HOME/Library/Fonts/sketchybar-app-font.ttf
-
-# Start Services
-echo "Starting Services (grant permissions)..."
-skhd --start-service
-yabai --start-service
-brew services start sketchybar
-
-# config yabai
-echo "Config yabai"
-csrutil status
-echo "Do not forget to disable SIP"
-echo "Add sudoer manually:\n '$(whoami) ALL = (root) NOPASSWD: sha256:$(shasum -a 256 $(which yabai) | awk "{print \$1;}") $(which yabai) --load-sa' to '/private/etc/sudoers.d/yabai'"
 
 echo "Installation complete..."
