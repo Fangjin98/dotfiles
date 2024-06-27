@@ -9,7 +9,7 @@ brew analytics off
 brew tap homebrew/cask-fonts
 brew tap FelixKratz/formulae
 
-brew install gh starship zsh-autosuggestions zsh-syntax-highlighting bottom lsd fzf zoxide tmux 
+brew install gh starship zsh-autosuggestions zsh-syntax-highlighting bottom lsd fzf zoxide tmux zotero
 brew install --cask skim latest miniconda raycast joplin font-caskaydia-cove-nerd-font
 
 # macOS Settings
