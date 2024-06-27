@@ -9,8 +9,8 @@ brew analytics off
 brew tap homebrew/cask-fonts
 brew tap FelixKratz/formulae
 
-brew install gh starship zsh-autosuggestions zsh-syntax-highlighting bottom lsd fzf zoxide
-brew install --cask skim latest miniconda raycast joplin
+brew install gh starship zsh-autosuggestions zsh-syntax-highlighting bottom lsd fzf zoxide tmux 
+brew install --cask skim latest miniconda raycast joplin font-caskaydia-cove-nerd-font
 
 # macOS Settings
 # echo "Changing macOS defaults..."
@@ -53,10 +53,5 @@ echo "Link Configuration Files..."
 mkdir -p $HOME/.config
 ./mac-install-dotfiles.sh
 source $HOME/.zshrc
-
-# Installing Fonts
-# git clone git@github.com:shaunsingh/SFMono-Nerd-Font-Ligaturized.git /tmp/SFMono_Nerd_Font
-# mv /tmp/SFMono_Nerd_Font/* $HOME/Library/Fonts
-# rm -rf /tmp/SFMono_Nerd_Font/
 
 echo "Installation complete..."
